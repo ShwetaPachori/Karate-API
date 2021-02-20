@@ -5,8 +5,8 @@ function fn() {
     env = 'dev';
   }
   var config = {
-    env: env,
-	myVarName: 'someValue'
+    
+	ApiUrl:'https://conduit.productionready.io/api/'
   }
   if (env == 'dev') {
     // customize

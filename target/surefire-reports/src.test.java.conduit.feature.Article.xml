@@ -1,0 +1,16 @@
+<testsuite failures="0" name="src/test/java/conduit/feature/Article.feature" skipped="0" tests="1" time="2.334833">
+  <testcase classname="src.test.java.conduit.feature.Article" name="Create Article" time="2.334833">
+    <system-out>Given url 'https://conduit.productionready.io/api/' ....................... passed
+Given path 'users/login' .................................................. passed
+And request {"user":{"email":"karatetestuser@gmail.com","password":"karatetestuser"}} . passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+* def token = response.user.token ......................................... passed
+Given header Authorization = 'Token ' + token ............................. passed
+Given path 'articles' ..................................................... passed
+And request {"article":{"tagList":[],"title":"Testing","description":"This  Article is for testing","body":"Test class"}} . passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+Then match response.article.title == 'Testing' ............................ passed</system-out>
+  </testcase>
+</testsuite>

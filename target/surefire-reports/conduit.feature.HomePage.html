@@ -47,14 +47,14 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2021-02-19 03:18:04 AM</div>        
+<div id="nav-date">2021-02-20 04:32:02 AM</div>        
       
 <div class="nav-container">
 <div class="nav-item passed">
-<a href="#[1:6]">[1:6] Get all tags </a>
+<a href="#[1:7]">[1:7] Get all tags </a>
 </div>
 <div class="nav-item passed">
-<a href="#[2:13]">[2:13] Get all tags </a>
+<a href="#[2:18]">[2:18] Get all tags </a>
 </div>
 </div>
 </div>
@@ -65,28 +65,28 @@
 <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">conduit/feature/HomePage.feature</span><span class="feature-description">Test Home Page</span>
 </div>
 <div class="scenario">
-<div class="scenario-heading" id="[1:6]">
+<div class="scenario-heading" id="[1:7]">
 <div class="heading-container">
 <div class="scenario-tags"></div>
-<span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">Get all tags </span>
+<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">Get all tags </span>
 </div>
-<div class="scenario-time passed">ms: 24281</div>
+<div class="scenario-time passed">ms: 1271</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="[1:6]bg">
+<div class="step-container" id="[1:7]bg">
 <div class="step-ref bg-step">&gt;&gt;</div>
 <div class="step-cell passed">Background:</div>
 </div>
 <div class="time-cell passed"></div>
 </div>
-<div class="step-row" data-parent="[1:6]bg">
+<div class="step-row" data-parent="[1:7]bg">
 <div class="step-container" id="1">
 <div class="step-ref bg-step">1</div>
-<div class="step-cell passed">Given url 'https://conduit.productionready.io/api/'</div>
+<div class="step-cell passed">Given url ApiUrl</div>
 </div>
-<div class="time-cell passed">2</div>
+<div class="time-cell passed">0</div>
 </div>
-<div class="preformatted" data-parent="1">03:17:39.413 karate.env system property was:</div>
+<div class="preformatted" data-parent="1">04:32:01.119 karate.env system property was:</div>
 <div class="step-row">
 <div class="step-container" id="2">
 <div class="step-ref passed">2</div>
@@ -99,40 +99,40 @@
 <div class="step-ref passed">3</div>
 <div class="step-cell passed">When method GET</div>
 </div>
-<div class="time-cell passed">24271</div>
+<div class="time-cell passed">1257</div>
 </div>
-<div class="preformatted" data-parent="3">03:17:40.915 request:
+<div class="preformatted" data-parent="3">04:32:01.125 request:
 1 &gt; GET https://conduit.productionready.io/api/tags
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: conduit.productionready.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_241)
 
-03:18:03.770 response time in milliseconds: 22851.69
+04:32:02.380 response time in milliseconds: 1253.89
 1 &lt; 200
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 623c7d0c5899084b-CDG
+1 &lt; CF-RAY: 624526c75ed932ac-CDG
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Fri, 19 Feb 2021 02:16:55 GMT
-1 &lt; ETag: W/"324fbeaffe650e52f601c952948fb1e2"
+1 &lt; Date: Sat, 20 Feb 2021 03:30:53 GMT
+1 &lt; ETag: W/"12c24715a3ff347c21b11d662b4169cc"
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 &lt; Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=m%2BWwOvjaAJgp26rin8FuXFA9zbzlnf4ZPqyiK2Ld9XsVfLmjioHl0D5zh8xMY%2BWUhjt8IzrogShjXWiXik6GuLoe%2BnSW62P49LYr8N5jtmyynX1DzXgQeO%2Fu2A%3D%3D"}],"max_age":604800}
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=D8XzMa5UgWGy%2BglXNo%2BQZx50XenOq6ng%2BmghxLxSV%2FDXLBx5KtvsfQ7Xz32jR9d96WQaztrbdf2Nj5%2Bhze32twrSVoTD3I%2FV4JfLAzuAL4SVLur3XLmtCaL9tw%3D%3D"}],"group":"cf-nel"}
 1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d0eb775650ac72aabd5e22406cc1dc4791613701014; expires=Sun, 21-Mar-21 02:16:54 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Set-Cookie: __cfduid=d41839b9bcdcfed3c5c6a0c0329b84b361613791852; expires=Mon, 22-Mar-21 03:30:52 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
 1 &lt; Status: 200 OK
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Vary: Origin
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Powered-By: Phusion Passenger 4.0.60
-1 &lt; X-Request-Id: f12d4c30-c36b-4568-997e-43c0d803047d
-1 &lt; X-Runtime: 0.831528
+1 &lt; X-Request-Id: 2adbfc42-d0a1-4d96-b347-af2488c66077
+1 &lt; X-Runtime: 0.848148
 1 &lt; X-XSS-Protection: 1; mode=block
-1 &lt; cf-request-id: 0859ac7bb50000084bfa112000000001
-{"tags":["&zwnj;","&zwnj;&zwnj;","&zwnj;&zwnj;&zwnj;","&zwnj;&zwnj;&zwnj;&zwnj;","&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;","&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;","&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;","&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;","&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;","&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;","HuManIty","Hu&zwnj;Man&zwnj;Ity","Gandhi","HITLER","SIDA","BlackLivesMatter","Black&zwnj;Lives&zwnj;Matter","test","dragons","butt"]}</div>
+1 &lt; cf-request-id: 085f16909a000032acc6944000000001
+{"tags":["&zwnj;","&zwnj;&zwnj;","&zwnj;&zwnj;&zwnj;","&zwnj;&zwnj;&zwnj;&zwnj;","&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;","&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;","&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;","&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;","&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;","&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;","HuManIty","Hu&zwnj;Man&zwnj;Ity","Gandhi","HITLER","SIDA","BlackLivesMatter","Black&zwnj;Lives&zwnj;Matter","test","dragons","butt"]}</div>
 <div class="step-row">
 <div class="step-container" id="4">
 <div class="step-ref passed">4</div>
@@ -145,32 +145,53 @@
 <div class="step-ref passed">5</div>
 <div class="step-cell passed">And match response.tags contains ['HITLER','SIDA']</div>
 </div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">And match response.tags !contains 'trucks'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">And match response.tags == "#array"</div>
+</div>
 <div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">And match each response.tags =="#string"</div>
+</div>
+<div class="time-cell passed">3</div>
 </div>
 </div>
 <div class="scenario">
-<div class="scenario-heading" id="[2:13]">
+<div class="scenario-heading" id="[2:18]">
 <div class="heading-container">
 <div class="scenario-tags"></div>
-<span class="scenario-keyword">Scenario: [2:13]</span><span class="scenario-name">Get all tags </span>
+<span class="scenario-keyword">Scenario: [2:18]</span><span class="scenario-name">Get all tags </span>
 </div>
-<div class="scenario-time passed">ms: 620</div>
+<div class="scenario-time passed">ms: 570</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="[2:13]bg">
+<div class="step-container" id="[2:18]bg">
 <div class="step-ref bg-step">&gt;&gt;</div>
 <div class="step-cell passed">Background:</div>
 </div>
 <div class="time-cell passed"></div>
 </div>
-<div class="step-row" data-parent="[2:13]bg">
-<div class="step-container" id="6">
-<div class="step-ref bg-step">6</div>
-<div class="step-cell passed">Given url 'https://conduit.productionready.io/api/'</div>
+<div class="step-row" data-parent="[2:18]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-cell passed">Given url ApiUrl</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
-<div class="preformatted" data-parent="6">03:18:03.794 karate.env system property was:</div>
+<div class="preformatted" data-parent="9">04:32:02.400 karate.env system property was:</div>
 <div class="step-row">
 <div class="step-container">
 <div class="step-ref passed"></div>
@@ -179,64 +200,78 @@
 <div class="time-cell comment"></div>
 </div>
 <div class="step-row">
-<div class="step-container" id="7">
-<div class="step-ref passed">7</div>
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
 <div class="step-cell passed">Given params {limit:10 ,offset:0}</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="8">
-<div class="step-ref passed">8</div>
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
 <div class="step-cell passed">Given path 'articles'</div>
 </div>
-<div class="time-cell passed">2</div>
+<div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="9">
-<div class="step-ref passed">9</div>
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
 <div class="step-cell passed">When method GET</div>
 </div>
-<div class="time-cell passed">618</div>
+<div class="time-cell passed">562</div>
 </div>
-<div class="preformatted" data-parent="9">03:18:03.799 request:
+<div class="preformatted" data-parent="12">04:32:02.403 request:
 1 &gt; GET https://conduit.productionready.io/api/articles?limit=10&amp;offset=0
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: conduit.productionready.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_241)
 
-03:18:04.412 response time in milliseconds: 596.24
+04:32:02.963 response time in milliseconds: 558.21
 1 &lt; 200
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 623c7d160d2b4bfa-AMS
+1 &lt; CF-RAY: 624526cf6817cde3-CDG
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Fri, 19 Feb 2021 02:16:56 GMT
-1 &lt; ETag: W/"79f55cadd7d3a1a6b562b7990026aa37"
+1 &lt; Date: Sat, 20 Feb 2021 03:30:54 GMT
+1 &lt; ETag: W/"402d5076ed9bccb1db3baf401a3b9f9f"
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 &lt; Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=Tis1NdnOllL%2F0nC0aiRstx6OK0%2B1yZjGtyKcZyh6jsfXvhEydgViE0fZM87sTQqY2p2cjPlGuN4JV1oQIVuz3l0kExcm7U2FJ740%2FOvpxdb0vnyNK%2Fv8GvYbpw%3D%3D"}]}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=hJve%2BGefTrmELzE30eZibxMLpqmZAOxHXeWXOD2%2BqDNEq3f7zMjvU2cDE3S1zsUeBfHG7sgXqHpy4cnYf119okJpDZtCU%2FbET77IkSqWufVnJqRV%2FOHmDxqpEg%3D%3D"}],"group":"cf-nel","max_age":604800}
 1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d8a258780ea2668dd80a3a59bb98f7fe31613701016; expires=Sun, 21-Mar-21 02:16:56 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Set-Cookie: __cfduid=d12475c792ddb29f0ff549b49ee545d131613791853; expires=Mon, 22-Mar-21 03:30:53 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
 1 &lt; Status: 200 OK
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Vary: Origin
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Powered-By: Phusion Passenger 4.0.60
-1 &lt; X-Request-Id: 6e6e8e99-0f9a-4eb9-be1e-234b2c1bdca2
-1 &lt; X-Runtime: 0.139741
+1 &lt; X-Request-Id: 046d691c-95b0-4634-85e7-5647c7f594ee
+1 &lt; X-Runtime: 0.142168
 1 &lt; X-XSS-Protection: 1; mode=block
-1 &lt; cf-request-id: 0859ac81c300004bfa9e9cb000000001
-{"articles":[{"title":"Udoc-2","slug":"udoc-2-vv99co","body":"Udoc-2","createdAt":"2021-02-19T01:23:47.447Z","updatedAt":"2021-02-19T01:23:47.447Z","tagList":[],"description":"Udoc-2","author":{"username":"mbaruah","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Udoc-1","slug":"udoc-1-sfhjbf","body":"Udoc-1","createdAt":"2021-02-19T01:23:35.302Z","updatedAt":"2021-02-19T01:23:35.302Z","tagList":[],"description":"Udoc-1","author":{"username":"mbaruah","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Test2","slug":"test2-i10y7s","body":"Test2","createdAt":"2021-02-19T01:09:59.762Z","updatedAt":"2021-02-19T01:09:59.762Z","tagList":[],"description":"Test2","author":{"username":"mbaruah","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Test1","slug":"test1-2r3hyr","body":"Test1","createdAt":"2021-02-19T01:09:44.502Z","updatedAt":"2021-02-19T01:09:44.502Z","tagList":[],"description":"Test1","author":{"username":"mbaruah","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"RealWorld Ex testing 2","slug":"realworld-ex-testing-2-ss6wm6","body":"RealWorld Ex testing 2","createdAt":"2021-02-19T01:00:22.801Z","updatedAt":"2021-02-19T01:00:22.801Z","tagList":[],"description":"RealWorld Ex testing 2","author":{"username":"mbaruah","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"RealWorld Ex testing 1","slug":"realworld-ex-testing-1-ztqfq5","body":"RealWorld Ex testing 1","createdAt":"2021-02-19T01:00:07.373Z","updatedAt":"2021-02-19T01:00:07.373Z","tagList":[],"description":"RealWorld Ex testing 1","author":{"username":"mbaruah","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Request from API","slug":"request-from-api-8u81i1","body":"Angular is cool","createdAt":"2021-02-19T00:55:19.811Z","updatedAt":"2021-02-19T00:55:19.811Z","tagList":[],"description":"API testing is easy","author":{"username":"cypress_student2021","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"This is a test...","slug":"this-is-a-test-y6t61w","body":"This is a test of the Editor.","createdAt":"2021-02-19T00:50:54.049Z","updatedAt":"2021-02-19T00:50:54.049Z","tagList":[],"description":"of the Editor","author":{"username":"FirstLast","bio":"I'm a little teapot...","image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"This is a test...","slug":"this-is-a-test-19xtbu","body":"This is a test of the Editor.","createdAt":"2021-02-19T00:50:45.295Z","updatedAt":"2021-02-19T00:50:45.295Z","tagList":[],"description":"of the Editor","author":{"username":"FirstLast","bio":"I'm a little teapot...","image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Request from API","slug":"request-from-api-kf5qw8","body":"Angular is cool","createdAt":"2021-02-19T00:50:17.064Z","updatedAt":"2021-02-19T00:50:17.064Z","tagList":[],"description":"API testing is easy","author":{"username":"cypress_student2021","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}],"articlesCount":500}</div>
+1 &lt; cf-request-id: 085f1695a00000cde3ffbc5000000001
+{"articles":[{"title":"Testing","slug":"testing-sycfyv","body":"Test class","createdAt":"2021-02-20T03:30:49.883Z","updatedAt":"2021-02-20T03:30:49.883Z","tagList":[],"description":"This  Article is for testing","author":{"username":"karatetestuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"just testing","slug":"just-testing-h7e5u5","body":"zxnvmcyzwdrigsthzb@twzhhq.online","createdAt":"2021-02-20T03:28:25.382Z","updatedAt":"2021-02-20T03:28:25.382Z","tagList":[],"description":"nothing special","author":{"username":"automatio1","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"12","slug":"12-rlkkqq","body":"3","createdAt":"2021-02-20T03:18:00.966Z","updatedAt":"2021-02-20T03:18:00.966Z","tagList":[],"description":"4","author":{"username":"xjl","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"celular","slug":"celular-uy2j","body":"telefonica","createdAt":"2021-02-20T03:15:14.210Z","updatedAt":"2021-02-20T03:15:14.210Z","tagList":[],"description":"para ","author":{"username":"nilton","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Testing","slug":"testing-egglqs","body":"Test class","createdAt":"2021-02-20T03:12:49.442Z","updatedAt":"2021-02-20T03:12:49.442Z","tagList":[],"description":"This  Article is for testing","author":{"username":"karatetestuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"1","slug":"1-qu07g9","body":"3","createdAt":"2021-02-20T03:10:44.552Z","updatedAt":"2021-02-20T03:10:44.552Z","tagList":[],"description":"2","author":{"username":"xjl","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"celular","slug":"celular-t3finl","body":"telefonica","createdAt":"2021-02-20T03:08:38.709Z","updatedAt":"2021-02-20T03:08:38.709Z","tagList":[],"description":"para ","author":{"username":"nilton","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Testing","slug":"testing-4ti3pc","body":"Test class","createdAt":"2021-02-20T03:05:03.543Z","updatedAt":"2021-02-20T03:05:03.543Z","tagList":[],"description":"This  Article is for testing","author":{"username":"karatetestuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Testing","slug":"testing-jrea5i","body":"Test class","createdAt":"2021-02-20T02:59:00.783Z","updatedAt":"2021-02-20T02:59:00.783Z","tagList":[],"description":"This  Article is for testing","author":{"username":"karatetestuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"hello ","slug":"hello-ko67it","body":"hello","createdAt":"2021-02-20T02:58:03.753Z","updatedAt":"2021-02-20T02:58:03.753Z","tagList":[],"description":"helloworld","author":{"username":"xjl","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}],"articlesCount":500}</div>
 <div class="step-row">
-<div class="step-container" id="10">
-<div class="step-ref passed">10</div>
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
 <div class="step-cell passed">Then status 200</div>
 </div>
 <div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">And match response.articles == "#[10]"</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">And match response.articlesCount == 500</div>
+</div>
+<div class="time-cell passed">2</div>
 </div>
 </div>
 </div>

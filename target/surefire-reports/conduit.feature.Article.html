@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>conduit.feature.Article</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">2</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-02-20 04:32:01 AM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:9]">[1:9] Create Article </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2:18]">[2:18] Delete Article </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">conduit/feature/Article.feature</span><span class="feature-description">Test Article</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:9]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">debug</a>
+</div>
+<span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">Create Article </span>
+</div>
+<div class="scenario-time passed">ms: 2651</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:9]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">Given url ApiUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="1">04:31:55.794 karate.env system property was:</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* def responseToken = callonce read('classpath:src/test/java/conduit/helpers/CreateToken.feature')</div>
+</div>
+<div class="time-cell passed">1681</div>
+</div>
+<div class="preformatted" data-parent="2">04:31:57.549 &lt;&lt; lock released, cached callonce: read('classpath:src/test/java/conduit/helpers/CreateToken.feature')</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="2.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">src/test/java/conduit/helpers/CreateToken.feature</div>
+</div>
+<div class="time-cell passed">1667</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url ApiUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="3">04:31:55.874 &gt;&gt; lock acquired, begin callonce: read('classpath:src/test/java/conduit/helpers/CreateToken.feature')</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'users/login'</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request {"user":{"email":"karatetestuser@gmail.com","password":"karatetestuser"}}</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">1653</div>
+</div>
+<div class="preformatted" data-parent="6">04:31:56.757 request:
+1 &gt; POST https://conduit.productionready.io/api/users/login
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 73
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_241)
+{"user":{"email":"karatetestuser@gmail.com","password":"karatetestuser"}}
+
+04:31:57.541 response time in milliseconds: 780.58
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 624526adbf6acd9b-CDG
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sat, 20 Feb 2021 03:30:49 GMT
+1 &lt; ETag: W/"ff0183fb40d3f0ed93307ee93b081adb"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=MC8szOMZwri63BwUoMB%2Bqkcg5PM8V7M7KJ9fzCHS3IwtH16KP7ijXgsgN0FFpxLacJrZIUETGX6pn%2FulAtWWzZl8%2F1bzM8EiifTy8iqO3lWZut5QSoVSNyBejw%3D%3D"}],"max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=db97c6a382f9545ac15b41d82762e236a1613791848; expires=Mon, 22-Mar-21 03:30:48 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: fd0a71c1-e862-4955-91e4-21d7d470a3e8
+1 &lt; X-Runtime: 0.081626
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; cf-request-id: 085f16808e0000cd9b59390000000001
+{"user":{"id":143581,"email":"karatetestuser@gmail.com","createdAt":"2021-02-19T22:50:39.861Z","updatedAt":"2021-02-19T22:50:39.870Z","username":"karatetestuser","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzNTgxLCJ1c2VybmFtZSI6ImthcmF0ZXRlc3R1c2VyIiwiZXhwIjoxNjE4OTc1ODQ4fQ.NtR5ZUFG8bW8MxlhreMIXPQe6wXDpbrhTxMhD0Cvk2U"}}</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="8">
+<div class="step-ref bg-step">8</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def authToken = response.user.token</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-cell passed">* def token = responseToken.authToken</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">Given header Authorization = 'Token ' + token</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">Given path 'articles'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">And request {"article":{"tagList":[],"title":"Testing","description":"This  Article is for testing","body":"Test class"}}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">953</div>
+</div>
+<div class="preformatted" data-parent="13">04:31:57.563 request:
+1 &gt; POST https://conduit.productionready.io/api/articles
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzNTgxLCJ1c2VybmFtZSI6ImthcmF0ZXRlc3R1c2VyIiwiZXhwIjoxNjE4OTc1ODQ4fQ.NtR5ZUFG8bW8MxlhreMIXPQe6wXDpbrhTxMhD0Cvk2U
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 109
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_241)
+{"article":{"tagList":[],"title":"Testing","description":"This  Article is for testing","body":"Test class"}}
+
+04:31:58.513 response time in milliseconds: 949.19
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 624526b31d4f0487-CDG
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sat, 20 Feb 2021 03:30:49 GMT
+1 &lt; ETag: W/"8a97d88137b6330afe34beb4c9f52d49"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=8Ie95HD2IxraLh%2Bq35tzp81g%2FRIBx%2BgJDmILkAlJJwQvUi0TCnWTD815uzpNl6eAX3IQYRjlNFmDmNAMYt3BDolLg4PxP8DjsUmsKeblST2ye9CV0xj19%2FUqsg%3D%3D"}]}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=de6d26f69c73719f30f48da57926c12a31613791849; expires=Mon, 22-Mar-21 03:30:49 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: cda044b9-9a50-4f73-8c89-e97a6ebc1764
+1 &lt; X-Runtime: 0.218298
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; cf-request-id: 085f1683f100000487018e6000000001
+{"article":{"title":"Testing","slug":"testing-sycfyv","body":"Test class","createdAt":"2021-02-20T03:30:49.883Z","updatedAt":"2021-02-20T03:30:49.883Z","tagList":[],"description":"This  Article is for testing","author":{"username":"karatetestuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">Then match response.article.title == 'Testing'</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:18]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">debug</a>
+</div>
+<span class="scenario-keyword">Scenario: [2:18]</span><span class="scenario-name">Delete Article </span>
+</div>
+<div class="scenario-time passed">ms: 2457</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2:18]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2:18]bg">
+<div class="step-container" id="16">
+<div class="step-ref bg-step">16</div>
+<div class="step-cell passed">Given url ApiUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="16">04:31:58.544 karate.env system property was:</div>
+<div class="step-row" data-parent="[2:18]bg">
+<div class="step-container" id="17">
+<div class="step-ref bg-step">17</div>
+<div class="step-cell passed">* def responseToken = callonce read('classpath:src/test/java/conduit/helpers/CreateToken.feature')</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[2:18]bg">
+<div class="step-container" id="18">
+<div class="step-ref bg-step">18</div>
+<div class="step-cell passed">* def token = responseToken.authToken</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">Given header Authorization = 'Token ' + token</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">Given path 'articles'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">And request {"article":{"tagList":[],"title":"Delete","description":"This  Article is for testing","body":"Test class"}}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref passed">22</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">489</div>
+</div>
+<div class="preformatted" data-parent="22">04:31:58.552 request:
+1 &gt; POST https://conduit.productionready.io/api/articles
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzNTgxLCJ1c2VybmFtZSI6ImthcmF0ZXRlc3R1c2VyIiwiZXhwIjoxNjE4OTc1ODQ4fQ.NtR5ZUFG8bW8MxlhreMIXPQe6wXDpbrhTxMhD0Cvk2U
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 108
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_241)
+{"article":{"tagList":[],"title":"Delete","description":"This  Article is for testing","body":"Test class"}}
+
+04:31:59.038 response time in milliseconds: 483.08
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 624526b759a832bf-CDG
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sat, 20 Feb 2021 03:30:50 GMT
+1 &lt; ETag: W/"ffe60292e200fc5a964ee3fcd928f8af"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 &lt; Report-To: {"max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=fMR9Ft6spd5YYOh%2BgNu7ieub8DNsbp5S%2BDfEiH67kfqWf6WK0hrLvXMylTycGB%2FtjXRJvIILySd%2BEn9BI%2Fc%2BqWIYGtdCuvKlU65Hl9gs8AATezPMWO2X%2FBPdeg%3D%3D"}],"group":"cf-nel"}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=db062816c5bfe6811d9be936ee40c2f471613791850; expires=Mon, 22-Mar-21 03:30:50 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: a06b5d33-9433-4792-8815-ed9ffc674d13
+1 &lt; X-Runtime: 0.066873
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; cf-request-id: 085f168695000032bf87291000000001
+{"article":{"title":"Delete","slug":"delete-ss72e1","body":"Test class","createdAt":"2021-02-20T03:30:50.430Z","updatedAt":"2021-02-20T03:30:50.430Z","tagList":[],"description":"This  Article is for testing","author":{"username":"karatetestuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref passed">24</div>
+<div class="step-cell passed">Then match response.article.title == 'Delete'</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="25">
+<div class="step-ref passed">25</div>
+<div class="step-cell passed">* def articleId = response.article.slug</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="26">
+<div class="step-ref passed">26</div>
+<div class="step-cell passed">Given params {limit:10 ,offset:0}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="27">
+<div class="step-ref passed">27</div>
+<div class="step-cell passed">Given path 'articles'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="28">
+<div class="step-ref passed">28</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">769</div>
+</div>
+<div class="preformatted" data-parent="28">04:31:59.052 request:
+2 &gt; GET https://conduit.productionready.io/api/articles?limit=10&amp;offset=0
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Cookie: __cfduid=db062816c5bfe6811d9be936ee40c2f471613791850
+2 &gt; Host: conduit.productionready.io
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_241)
+
+04:31:59.816 response time in milliseconds: 763.42
+2 &lt; 200
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; CF-RAY: 624526ba7ebaee17-CDG
+2 &lt; Cache-Control: max-age=0, private, must-revalidate
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Date: Sat, 20 Feb 2021 03:30:51 GMT
+2 &lt; ETag: W/"b0807ccfc75e76bcb781e5783514ef87"
+2 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+2 &lt; Report-To: {"max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=ox%2FmSinzdzEZv9CFdvCASBBVwCZkZflIV2jYdLhAUyfuhdAzWJgSGW8BzlUxG8BZ55RRkN3%2Byl8KNiYm%2F7h9dpajvMPUcJyC3K1ja%2BhnrsSuzAuuyWrGNqvq%2Bw%3D%3D"}],"group":"cf-nel"}
+2 &lt; Server: cloudflare
+2 &lt; Status: 200 OK
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Vary: Origin
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-Powered-By: Phusion Passenger 4.0.60
+2 &lt; X-Request-Id: 3b62b48e-39d7-4b75-beef-0e4e67079410
+2 &lt; X-Runtime: 0.338465
+2 &lt; X-XSS-Protection: 1; mode=block
+2 &lt; cf-request-id: 085f16888f0000ee1722b57000000001
+{"articles":[{"title":"Delete","slug":"delete-ss72e1","body":"Test class","createdAt":"2021-02-20T03:30:50.430Z","updatedAt":"2021-02-20T03:30:50.430Z","tagList":[],"description":"This  Article is for testing","author":{"username":"karatetestuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Testing","slug":"testing-sycfyv","body":"Test class","createdAt":"2021-02-20T03:30:49.883Z","updatedAt":"2021-02-20T03:30:49.883Z","tagList":[],"description":"This  Article is for testing","author":{"username":"karatetestuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"just testing","slug":"just-testing-h7e5u5","body":"zxnvmcyzwdrigsthzb@twzhhq.online","createdAt":"2021-02-20T03:28:25.382Z","updatedAt":"2021-02-20T03:28:25.382Z","tagList":[],"description":"nothing special","author":{"username":"automatio1","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"12","slug":"12-rlkkqq","body":"3","createdAt":"2021-02-20T03:18:00.966Z","updatedAt":"2021-02-20T03:18:00.966Z","tagList":[],"description":"4","author":{"username":"xjl","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"celular","slug":"celular-uy2j","body":"telefonica","createdAt":"2021-02-20T03:15:14.210Z","updatedAt":"2021-02-20T03:15:14.210Z","tagList":[],"description":"para ","author":{"username":"nilton","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Testing","slug":"testing-egglqs","body":"Test class","createdAt":"2021-02-20T03:12:49.442Z","updatedAt":"2021-02-20T03:12:49.442Z","tagList":[],"description":"This  Article is for testing","author":{"username":"karatetestuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"1","slug":"1-qu07g9","body":"3","createdAt":"2021-02-20T03:10:44.552Z","updatedAt":"2021-02-20T03:10:44.552Z","tagList":[],"description":"2","author":{"username":"xjl","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"celular","slug":"celular-t3finl","body":"telefonica","createdAt":"2021-02-20T03:08:38.709Z","updatedAt":"2021-02-20T03:08:38.709Z","tagList":[],"description":"para ","author":{"username":"nilton","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Testing","slug":"testing-4ti3pc","body":"Test class","createdAt":"2021-02-20T03:05:03.543Z","updatedAt":"2021-02-20T03:05:03.543Z","tagList":[],"description":"This  Article is for testing","author":{"username":"karatetestuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Testing","slug":"testing-jrea5i","body":"Test class","createdAt":"2021-02-20T02:59:00.783Z","updatedAt":"2021-02-20T02:59:00.783Z","tagList":[],"description":"This  Article is for testing","author":{"username":"karatetestuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}],"articlesCount":500}</div>
+<div class="step-row">
+<div class="step-container" id="29">
+<div class="step-ref passed">29</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="30">
+<div class="step-ref passed">30</div>
+<div class="step-cell passed">Then match response.articles[0].title == 'Delete'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="31">
+<div class="step-ref passed">31</div>
+<div class="step-cell passed">Given header Authorization = 'Token ' + token</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="32">
+<div class="step-ref passed">32</div>
+<div class="step-cell passed">Given path 'articles',articleId</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="33">
+<div class="step-ref passed">33</div>
+<div class="step-cell passed">When method Delete</div>
+</div>
+<div class="time-cell passed">466</div>
+</div>
+<div class="preformatted" data-parent="33">04:31:59.822 request:
+3 &gt; DELETE https://conduit.productionready.io/api/articles/delete-ss72e1
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzNTgxLCJ1c2VybmFtZSI6ImthcmF0ZXRlc3R1c2VyIiwiZXhwIjoxNjE4OTc1ODQ4fQ.NtR5ZUFG8bW8MxlhreMIXPQe6wXDpbrhTxMhD0Cvk2U
+3 &gt; Connection: Keep-Alive
+3 &gt; Cookie: __cfduid=db062816c5bfe6811d9be936ee40c2f471613791850
+3 &gt; Host: conduit.productionready.io
+3 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_241)
+
+04:32:00.286 response time in milliseconds: 463.51
+3 &lt; 200
+3 &lt; CF-Cache-Status: DYNAMIC
+3 &lt; CF-RAY: 624526bf3851ede7-CDG
+3 &lt; Cache-Control: max-age=0, private, must-revalidate
+3 &lt; Connection: keep-alive
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Date: Sat, 20 Feb 2021 03:30:51 GMT
+3 &lt; ETag: W/"99914b932bd37a50b983c5e7c90ae93b"
+3 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+3 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+3 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=OngwmR3bZJjHm%2BXt%2BAKx7fn1ueAwFTx96SOH%2BMxbZNZAorFhaU5LpshenbXsUY5FXBeVO5kQ%2BWqCA%2F2zSMTK2WcZK6xN6wc6RwgxQWUrqv7vqsd6JxSAUJCUUw%3D%3D"}],"max_age":604800,"group":"cf-nel"}
+3 &lt; Server: cloudflare
+3 &lt; Status: 200 OK
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Vary: Origin
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-Frame-Options: SAMEORIGIN
+3 &lt; X-Powered-By: Phusion Passenger 4.0.60
+3 &lt; X-Request-Id: bc3135c4-4642-4154-a371-b59a676928e5
+3 &lt; X-Runtime: 0.058069
+3 &lt; X-XSS-Protection: 1; mode=block
+3 &lt; cf-request-id: 085f168b830000ede71d0ae000000001
+{}</div>
+<div class="step-row">
+<div class="step-container" id="34">
+<div class="step-ref passed">34</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="35">
+<div class="step-ref passed">35</div>
+<div class="step-cell passed">Given params {limit:10 ,offset:0}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="36">
+<div class="step-ref passed">36</div>
+<div class="step-cell passed">Given path 'articles'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="37">
+<div class="step-ref passed">37</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">717</div>
+</div>
+<div class="preformatted" data-parent="37">04:32:00.288 request:
+4 &gt; GET https://conduit.productionready.io/api/articles?limit=10&amp;offset=0
+4 &gt; Accept-Encoding: gzip,deflate
+4 &gt; Connection: Keep-Alive
+4 &gt; Cookie: __cfduid=db062816c5bfe6811d9be936ee40c2f471613791850
+4 &gt; Host: conduit.productionready.io
+4 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_241)
+
+04:32:01.004 response time in milliseconds: 714.49
+4 &lt; 200
+4 &lt; CF-Cache-Status: DYNAMIC
+4 &lt; CF-RAY: 624526c22b27cdd3-CDG
+4 &lt; Connection: keep-alive
+4 &lt; Content-Type: application/json; charset=utf-8
+4 &lt; Date: Sat, 20 Feb 2021 03:30:52 GMT
+4 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+4 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+4 &lt; Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=KgLUK8ydkRFc0zQFtaVdVEQJa3Gf3uo3MnfrPRRNEfQuT0xKr%2F%2BfYN%2Bgwyf6TXYKkRzk6GJlZGvn9nJ4dtti8eZ0j95L5FjdY5z1RSzdYWwYEVy35gsXTsHA%2FA%3D%3D"}],"max_age":604800}
+4 &lt; Server: cloudflare
+4 &lt; Transfer-Encoding: chunked
+4 &lt; cache-control: max-age=0, private, must-revalidate
+4 &lt; cf-request-id: 085f168d5d0000cdd316a30000000001
+4 &lt; etag: W/"402d5076ed9bccb1db3baf401a3b9f9f"
+4 &lt; status: 200 OK
+4 &lt; vary: Origin
+4 &lt; x-content-type-options: nosniff
+4 &lt; x-frame-options: SAMEORIGIN
+4 &lt; x-powered-by: Phusion Passenger 4.0.60
+4 &lt; x-request-id: a9c7c54a-5243-4cdb-bb9e-61a49f0a1572
+4 &lt; x-runtime: 0.289239
+4 &lt; x-xss-protection: 1; mode=block
+{"articles":[{"title":"Testing","slug":"testing-sycfyv","body":"Test class","createdAt":"2021-02-20T03:30:49.883Z","updatedAt":"2021-02-20T03:30:49.883Z","tagList":[],"description":"This  Article is for testing","author":{"username":"karatetestuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"just testing","slug":"just-testing-h7e5u5","body":"zxnvmcyzwdrigsthzb@twzhhq.online","createdAt":"2021-02-20T03:28:25.382Z","updatedAt":"2021-02-20T03:28:25.382Z","tagList":[],"description":"nothing special","author":{"username":"automatio1","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"12","slug":"12-rlkkqq","body":"3","createdAt":"2021-02-20T03:18:00.966Z","updatedAt":"2021-02-20T03:18:00.966Z","tagList":[],"description":"4","author":{"username":"xjl","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"celular","slug":"celular-uy2j","body":"telefonica","createdAt":"2021-02-20T03:15:14.210Z","updatedAt":"2021-02-20T03:15:14.210Z","tagList":[],"description":"para ","author":{"username":"nilton","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Testing","slug":"testing-egglqs","body":"Test class","createdAt":"2021-02-20T03:12:49.442Z","updatedAt":"2021-02-20T03:12:49.442Z","tagList":[],"description":"This  Article is for testing","author":{"username":"karatetestuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"1","slug":"1-qu07g9","body":"3","createdAt":"2021-02-20T03:10:44.552Z","updatedAt":"2021-02-20T03:10:44.552Z","tagList":[],"description":"2","author":{"username":"xjl","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"celular","slug":"celular-t3finl","body":"telefonica","createdAt":"2021-02-20T03:08:38.709Z","updatedAt":"2021-02-20T03:08:38.709Z","tagList":[],"description":"para ","author":{"username":"nilton","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Testing","slug":"testing-4ti3pc","body":"Test class","createdAt":"2021-02-20T03:05:03.543Z","updatedAt":"2021-02-20T03:05:03.543Z","tagList":[],"description":"This  Article is for testing","author":{"username":"karatetestuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Testing","slug":"testing-jrea5i","body":"Test class","createdAt":"2021-02-20T02:59:00.783Z","updatedAt":"2021-02-20T02:59:00.783Z","tagList":[],"description":"This  Article is for testing","author":{"username":"karatetestuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"hello ","slug":"hello-ko67it","body":"hello","createdAt":"2021-02-20T02:58:03.753Z","updatedAt":"2021-02-20T02:58:03.753Z","tagList":[],"description":"helloworld","author":{"username":"xjl","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}],"articlesCount":500}</div>
+<div class="step-row">
+<div class="step-container" id="38">
+<div class="step-ref passed">38</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="39">
+<div class="step-ref passed">39</div>
+<div class="step-cell passed">Then match response.articles[0].title != 'Delete'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>
