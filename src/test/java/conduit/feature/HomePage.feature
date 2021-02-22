@@ -9,6 +9,8 @@ Feature: Test Home Page
         When method GET
         Then status 200
         And match response.tags contains ['HITLER','SIDA']
+        And match response.tags contains any ['HITLER','SIDA','TESTING']
+        # And match response.tags contains only []
         And match response.tags !contains 'trucks'
         And match response.tags == "#array"
         And match each response.tags =="#string"
@@ -23,3 +25,6 @@ Feature: Test Home Page
         Then status 200
         And match response.articles == "#[10]"
         And match response.articlesCount == 500
+        And match response.articlesCount != 100
+        And match response.articles[*].favoritesCount contains 0
+        And match response..bio contains null
