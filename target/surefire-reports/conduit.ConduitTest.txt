@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: conduit.ConduitTest
--------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.379 s <<< FAILURE! - in conduit.ConduitTest
-testAll[3][1]  Time elapsed: 0.25 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: SignUp.feature:22 - status code was: 422, expected: 200, response time: 484, url: https://conduit.productionready.io/api/users, response: {"errors":{"email":["has already been taken"],"username":["has already been taken"]}}
-
